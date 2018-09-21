@@ -1,0 +1,75 @@
+package Fulassure1;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
+public class PerformancemanagementA2 {
+
+	@Test
+	public void Fullassure_Method() throws InterruptedException {
+		System.setProperty("webdriver.gecko.driver", "D:\\soft1\\geckodriver-v0.16.0-win64\\geckodriver.exe");
+		WebDriver driver = new FirefoxDriver();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.navigate().to("http://google.com");
+		driver.manage().window().maximize();
+		driver.get("http://fulassure.io/");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath(".//*[@id='page']/nav/div/div/a")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath(".//*[@id='page']/div/div[1]/div/div/div[2]/div[2]/form/div[1]/input"))
+				.sendKeys("securecoupon@fulassure");
+		driver.findElement(By.xpath(".//*[@id='page']/div/div[1]/div/div/div[2]/div[2]/form/div[2]/input"))
+				.sendKeys("fulassure@123");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath(".//*[@id='page']/div/div[1]/div/div/div[2]/div[2]/form/div[2]/input")).click();
+
+		driver.findElement(By.xpath(".//*[@id='page']/div/div[1]/div/div/div[2]/div[2]/a")).click();
+		driver.findElement(By.xpath(".//*[@id='identifierId']")).sendKeys("lokesh.s@cloudcollab.co");
+
+		driver.findElement(By.id("identifierNext")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath(".//*[@id='password']/div[1]/div/div[1]/input")).sendKeys("Lokesh@9");
+		driver.findElement(By.xpath(".//*[@id='passwordNext']/content/span")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.id("yml.performance_management")).click();
+		driver.findElement(By.xpath(".//*[@id='multiple-axis-line-graph']/div/select[1]")).click();
+		// driver.findElement(By.xpath("//option[@value='power']")).click();
+		driver.findElement(By.xpath(".//*[@id='multiple-axis-line-graph']/div/select[1]/option[3]")).click();
+		driver.findElement(By.xpath(".//*[@id='multiple-axis-line-graph']/div/select[1]")).click();
+		driver.findElement(By.xpath(".//*[@id='multiple-axis-line-graph']/div/select[2]")).click();
+		driver.findElement(By.xpath(".//*[@id='multiple-axis-line-graph']/div/select[2]/option[4]")).click();
+		driver.findElement(By.xpath(".//*[@id='multiple-axis-line-graph']/div/select[2]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.className("icon-enlarge")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//select[@class='_left form-control form-control-sm w-25']")).click();
+		driver.findElement(By.xpath(".//*[@id='show-modal']/div/div/div[2]/div[1]/select[1]/option[5]")).click();
+		driver.findElement(By.xpath("//select[@class='_right form-control form-control-sm w-25']")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//option[@value='temp']")).click();
+		driver.findElement(By.xpath(".//*[@id='show-modal']/div/div/div[1]/button")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath(".//*[@id='line-graph']/div/select[1]")).click();
+		driver.findElement(By.xpath(".//*[@id='line-graph']/div/select[1]/option[3]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath(".//*[@id='line-graph']/div/select[1]")).click();
+		driver.findElement(By.xpath(".//*[@id='line-graph']/div/select[2]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath(".//*[@id='line-graph']/div/select[2]/option[4]")).click();
+		driver.findElement(By.xpath(".//*[@id='line-graph']/div/select[2]")).click();
+		driver.findElement(By.className("icon-enlarge")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath(".//*[@id='show-modal']/div/div/div[2]/div[1]/select[1]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath(".//*[@id='show-modal']/div/div/div[2]/div[1]/select[2]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath(".//*[@id='show-modal']/div/div/div[2]/div[1]/select[2]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath(".//*[@id='show-modal']/div/div/div[1]/button")).click();
+
+	}
+}

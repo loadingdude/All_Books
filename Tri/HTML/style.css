@@ -1,0 +1,20 @@
+body
+{
+	background-image:url("https://www.planwallpaper.com/static/images/recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg")
+}
+table {
+    font-family: arial, sans-serif;
+    border collapse:collapse;
+    width: 50%;
+}
+
+td, th {
+    border: 1px solid gray;
+    text-align: left;
+	color:orange;
+    padding:8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

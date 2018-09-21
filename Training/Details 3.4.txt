@@ -1,0 +1,12 @@
+windows pwd:Password123
+
+email:mail.cloudcollab.co
+	
+username:lokesh.s@cloudcollab.co
+
+pwd:Password321
+
+    Lokesh@9
+
+my ip \\172.16.3.68
+       \\172.16.0.11

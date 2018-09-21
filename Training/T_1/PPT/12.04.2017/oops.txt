@@ -1,0 +1,73 @@
+1 ) Objects:-
+  
+            If we consider the real-world,
+            we can find many objects around us, cars, dogs, humans, etc.
+            All these objects have a state and a behavior.
+
+EX-
+                car is a one single object, 
+                which can be managed by the help of its subsystems, 
+                even if their inner details are unknown
+
+
+                Software objects also have a state and a behavior. 
+                A software object's state is stored in fields and behavior is shown via methods.
+
+
+
+2 ) Class -
+                A class can be defined as a template/blueprint that describes the behavior/state that the object of its type support.
+
+
+
+                A class is a blueprint from which individual objects are created
+
+3 ) Inheritance:-
+
+                Inheritance is the mechanism by which an object acquires the some/all properties of another object.
+
+EX:-
+
+                Car is a classification of Four Wheeler. 
+                Here Car acquires the properties of a four-wheeler. 
+                Other classifications could be a jeep, tempo, van etc. 
+                Four Wheeler defines a class of vehicles that have four wheels, 
+		and specific range of engine power, load carrying capacity etc. 
+                Car (termed as a sub-class) acquires these properties from Four Wheeler (termed as a super-class), 
+		and has some specific properties, which are different from other classifications of Four Wheeler, 
+		such as luxury, comfort, shape, size, usage etc.
+
+
+
+
+4 )Encapsulation:-
+
+                Encapsulation is a way to achieve "information hiding" 
+                
+EX-
+		You don't "need to know the internal working of the mobile phone to operate" with it. 
+		You have an interface to use the device behaviour without knowing implementation details.
+
+
+
+5 ) Polymorphism:-
+
+
+		The process of representing one form in multiple forms is known as Polymorphism
+
+		Polymorphism is derived from 2 greek words: poly and morphs. The word "poly" means many and "morphs" means forms. 
+		So polymorphism means many forms.
+
+Ex:-		Suppose if you are in class room that time you behave like a student, 
+		when you are in market at that time you behave like a customer, 
+		when you at your home at that time you behave like a son or daughter, 
+		Here one person present in different-different behaviors.
+
+6 ) Overriding :- 
+		Functions with the same definition have different behavior in different scopes. 
+		Used by a child class to chang behavior it inherited from its parent.
+
+
+EX:-		our dad has a bike and ur his son want to use his bike but it is outdated and u want to modify it the way you want to and ride it...that is, 
+		ur dad(class) has a function called Bike and ur using the same Bike(function) but modified/changed and ur using it(overriding). 
+		Same bike but now it is changed.... and when we say son it is ur modified bike that shud come into picture ..which has overriden ur dad's old bike

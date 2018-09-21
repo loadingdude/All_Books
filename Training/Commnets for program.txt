@@ -1,0 +1,104 @@
+/**
+  * @(#) EvenNumberManager 1.0 04/19/2017
+  * Copyright - None for now
+  * 
+  */
+class EvenNumberManager {
+	/* Definition here to explain what the class will do.
+	 * List all of the methods that you offer to the outside
+	 * world 
+	 */
+	
+	 /** 
+		* This class will help give you a way to print all of the
+		* even numbers for upto 10 counts
+		*
+		* @author Karthik
+		* @version 1.0
+		*/
+	 
+	 
+	 /* ---------------------------------------------
+	  * Global Variables
+	  * ---------------------------------------------
+	  */
+	  public static int MAX_LIMIT = 0;
+	  public static int MY_LIMIT = 10;	
+
+    /**
+	  * This method will print even
+	  * numbers from the given set of
+	  * integers...
+	  * @params int array
+	  */
+	  
+	public printEvenNumber(intArray) {
+		/* Iterate over the array, divide every
+		 * element by 2. Should the reminder equate
+		 * to 0, determine that to be a even number
+		 * and print the same 
+		 */
+		
+		for(int i = 0; i < intArray.size(); i++) {
+			if ((intArray[i] / 2) == 0) {
+				System.out.println("Even number is: " + intArray[i]);
+			} else {
+				;
+			}	
+		}	
+		return; 
+	}
+	
+	/**
+	  * This method will accept the params from the 
+	  * user.
+	  */
+	
+	public void getUpperLimit() {
+		/* Read the input from the user to find out what the UPPER Limit
+		 * of the number range should be
+		 */
+		System.out.println("Please enter the max limit to which even numbers are to be printed!:");
+		Scanner scanner = Scanner.read();
+		MAX_LIMIT = scanner.getNext(); /* Update the MAX_LIMIT to hold this value */
+		
+		/* Handle the number only input ... Dont allow
+		 * any characters or other input */
+		 ...
+		return;
+	}
+	
+	/**
+	  * Main stub to test this module independantly
+	  */
+	  
+	public static void main(String[] args) {
+		/* Create the object */
+		EvenNumberManager evenNumberMgr = new EvenNumberManager();
+		
+	
+		/* An array to hold all of the numbers */
+		int numberArray[] = new Array(MY_LIMIT);	
+		
+		/* Invoke this the first time, to retrieve the MAX_LIMIT */
+		evenNumberMgr.getUpperLimit();
+		
+		/* Control the creation of input array and restrict to 
+		 * 10 numbers as an example
+		 */
+		while ( MAX_LIMIT > MY_LIMIT ) {
+			/* Get the max limit from the user */
+			evenNumberMgr.getUpperLimit();
+		}		
+		
+		/* Avoid 0 as a start, as divide by 0 will throw an Exception */
+		for(int i = 1; i <= MAX_LIMIT; i++) {
+			/* Ensure the index starts from 0 in an array */
+			numberArray[(i-1)] = i;
+		}
+
+		evenNumberMgr.printEvenNumber(numberArray);	
+	
+	}
+	
+}  

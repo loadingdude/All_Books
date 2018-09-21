@@ -1,0 +1,88 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "A simple calculator to do additions",
+        "description": "",
+        "id": "secondapp-is-a-application-we-are-trying-for-the-second-time.;a-simple-calculator-to-do-additions",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 801190616,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "two numbers 1 and 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 12
+                },
+                {
+                  "val": "2",
+                  "offset": 18
+                }
+              ],
+              "location": "SecondApp.two_numbers_and(int,int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 95754,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "adding up the numbers",
+            "match": {
+              "location": "SecondApp.adding_up_the_numbers()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20648122,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the result should yield 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 24
+                }
+              ],
+              "location": "SecondApp.the_result_should_yield(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@SecondApp"
+          },
+          {
+            "line": 3,
+            "name": "@Sanity"
+          },
+          {
+            "line": 3,
+            "name": "@first"
+          }
+        ]
+      }
+    ],
+    "name": "SecondApp is a application we are trying for the second time.",
+    "description": "",
+    "id": "secondapp-is-a-application-we-are-trying-for-the-second-time.",
+    "keyword": "Feature",
+    "uri": "com/cc/secondApp/secondApp.feature"
+  }
+]
